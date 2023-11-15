@@ -56,24 +56,24 @@ const ShoppingCart = () => {
 
 	return (
 		<>
-		<div className={classes['shopping-cart']}>
-			<div className={classes['cart-list']}>
-				<h3>My Cart</h3>
-				<hr />
-				{cartItems.length > 0 ? cartItems.map((product) => (
-					<CartItem key={product.id}
-						product={product}
-						onIncrement={handleOnIncrement}
-						onDecrement={handleOnDecrement}
-						onRemoveItem={handleOnRemove}
-					></CartItem>
-				)) : <div><h2>Your shopping cart is empty.</h2><p>Go to <Link to='/'>Catalog</Link> to add items to your cart</p></div> }
+			<div className={classes['shopping-cart']}>
+				<div className={classes['cart-list']}>
+					<h3>My Cart</h3>
+					<hr />
+					{cartItems.length > 0 ? cartItems.map((product) => (
+						<CartItem key={product.id}
+							product={product}
+							onIncrement={handleOnIncrement}
+							onDecrement={handleOnDecrement}
+							onRemoveItem={handleOnRemove}
+						></CartItem>
+					)) : <div><h2>Your shopping cart is empty.</h2><p>Go to <Link to='/'>Catalog</Link> to add items to your cart</p></div> }
+				</div>
+				<div className={classes['order-total']}>
+					<OrderSummary></OrderSummary>
+				</div>
 			</div>
-			<div className={classes['order-total']}>
-				<OrderSummary></OrderSummary>
-			</div>
-		</div>
-		<img src={sslLogo} alt="" style={{marginTop: '3rem'}} />
+			<img src={sslLogo} alt="" style={{marginTop: '3rem'}} />
 		</>
 	);
 };
