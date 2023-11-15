@@ -6,8 +6,8 @@ Clone the repository
 ```git clone https://github.com/edwinb92/shopping-cart-react-2023.git ```
 
 # Software dependencies
--Node v18.x
--React v18.x
+- Node v18.x
+- React v18.x
 
 # Run the project
 
