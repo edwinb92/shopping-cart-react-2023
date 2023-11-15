@@ -21,6 +21,6 @@ test('renders the component', () => {
 			<Catalog />
 		</Provider>
 	);
-	const linkElement = screen.getByText('Catalog');
-	expect(linkElement).toBeInTheDocument();
+	const titleElement = screen.getByText('Catalog');
+	expect(titleElement).toBeInTheDocument();
 });
