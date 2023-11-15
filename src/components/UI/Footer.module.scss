@@ -17,6 +17,11 @@ footer {
 
 			a {
 				color: white;
+
+				&:hover {
+					text-decoration-color: wheat;
+					text-decoration: underline;
+				}
 			}
 		}		
 	}
