@@ -1,0 +1,19 @@
+.cart-items {
+	display: inline-flex;
+
+	img{
+		transition: transform 1s ease;
+
+		&.rotate {
+			transform: rotate(360deg);
+		}
+	}
+	.cart-items-counter {
+		width: 24px;
+		height: 24px;
+		background-color: black;
+		border-radius: 50%;
+		color: white;
+		text-align: center;
+	}
+}

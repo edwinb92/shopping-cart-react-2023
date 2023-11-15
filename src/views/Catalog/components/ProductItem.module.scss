@@ -1,0 +1,27 @@
+.product {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.description {
+		text-align: center;
+
+		p {
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.product {
+		img {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+		}
+	}
+}

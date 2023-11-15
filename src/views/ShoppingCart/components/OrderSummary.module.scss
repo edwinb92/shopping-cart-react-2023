@@ -1,0 +1,21 @@
+.order-summary {
+	p {
+		display: flex;
+		font-size: 1.5rem;
+		justify-content: space-between;
+	}
+
+	button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		color: white;
+		background-color: black;
+		border-radius: 0;
+
+		img{
+			margin-right: 0.250rem;
+		}
+	}
+}

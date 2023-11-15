@@ -1,0 +1,28 @@
+.qty-input {
+	display: flex;
+	align-items: center;
+	border: 1px solid black;
+	width: fit-content;
+
+	input {
+		border: 0;
+		width: 70px;
+		text-align: center;
+
+		:focus {
+			border: 0;
+		}
+	}
+
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	button {
+		padding: 0px 0px;
+		width: 25px;
+		border-radius: 0;
+	}
+}
