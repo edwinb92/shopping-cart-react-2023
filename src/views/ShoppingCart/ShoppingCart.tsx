@@ -13,31 +13,14 @@ const ShoppingCart = () => {
 	);
 	const dispatch = useDispatch();
 
-	const handleOnIncrement = (id: number) => {
+	const handleOnChangeQuantity = (id: number, quantity: number) => {
 		const newList = [...cartItems];
-
 		
 		const itemIndex = newList.findIndex((item) => item.id === id);
 
 		if (itemIndex !== -1) {
 			const newProduct = {...newList[itemIndex]};
-			newProduct.quantity = newProduct.quantity + 1;
-			newProduct.total = newProduct.quantity * newProduct.price;
-
-			newList[itemIndex] = newProduct;
-		}
-
-		dispatch({ type: 'SET_CARTITEMS', payload: newList });
-	};
-
-	const handleOnDecrement = (id: number) => {
-		const newList = [...cartItems];
-
-		const itemIndex = newList.findIndex((item) => item.id === id);
-
-		if (itemIndex !== -1) {
-			const newProduct = {...newList[itemIndex]};
-			newProduct.quantity = newProduct.quantity - 1;
+			newProduct.quantity = quantity;
 			newProduct.total = newProduct.quantity * newProduct.price;
 
 			newList[itemIndex] = newProduct;
@@ -63,9 +46,8 @@ const ShoppingCart = () => {
 					{cartItems.length > 0 ? cartItems.map((product) => (
 						<CartItem key={product.id}
 							product={product}
-							onIncrement={handleOnIncrement}
-							onDecrement={handleOnDecrement}
 							onRemoveItem={handleOnRemove}
+							onChangeQuantity={handleOnChangeQuantity}
 						></CartItem>
 					)) : <div><h2>Your shopping cart is empty.</h2><p>Go to <Link to='/'>Catalog</Link> to add items to your cart</p></div> }
 				</div>

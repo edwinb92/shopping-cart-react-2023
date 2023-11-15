@@ -1,6 +1,10 @@
 .cart-items {
 	display: inline-flex;
 
+	&:hover {
+		text-decoration: none;
+	}
+
 	img{
 		transition: transform 1s ease;
 

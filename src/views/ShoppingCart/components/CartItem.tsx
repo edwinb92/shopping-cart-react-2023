@@ -6,8 +6,7 @@ import InputQty from '../../../components/UI/InputQty';
 export interface ProductProps {
 	product: Product;
 	onRemoveItem: (id: number) => void;
-	onIncrement: (id: number) => void;
-	onDecrement: (id: number) => void;
+	onChangeQuantity: (id: number, quantity: number) => void;
 }
 
 const CartItem: React.FC<ProductProps> = (props) => {
@@ -28,8 +27,7 @@ const CartItem: React.FC<ProductProps> = (props) => {
 							₡{props.product.price.toFixed(2)}
 						</p>
 						<InputQty
-							onIncrement={props.onIncrement}
-							onDecrement={props.onDecrement}
+							onChangeQuantity={props.onChangeQuantity}
 							quantity={props.product.quantity}
 							id={props.product.id}
 						></InputQty>
