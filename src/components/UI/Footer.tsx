@@ -13,8 +13,8 @@ function Footer() {
 						<Link to='/'>Catalog</Link>
 					</li>
 				</ul>
-				<div></div>
 			</div>
+			<div className={classes['separator']}></div>
 			<div className={classes['created-by']}>Created by: Edwin Barrantes</div>
 		</footer>
 	);
