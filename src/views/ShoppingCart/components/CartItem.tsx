@@ -1,6 +1,6 @@
 import { Product } from '../../../entities/product';
 import classes from './CartItem.module.scss';
-import closeIcon from '../../../assets/images/close-icon.png';
+import closeIcon from '/assets/images/close-icon.png';
 import InputQty from '../../../components/UI/InputQty';
 
 export interface ProductProps {

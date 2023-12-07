@@ -4,11 +4,15 @@ interface stateType {
 	cartItems: Array<Product>
 }
 
+export interface SetCartItemsAction {
+	type: string;
+	payload: Array<Product>;
+  }
 const initialState: stateType = {
 	cartItems: [],
 };
 
-const counterReducer = (state = initialState, action) => {
+const counterReducer = (state = initialState, action: SetCartItemsAction) => {
 	switch (action.type) {
 	case 'SET_CARTITEMS':
 		return {

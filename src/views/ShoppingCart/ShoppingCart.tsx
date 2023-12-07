@@ -5,7 +5,7 @@ import classes from './ShoppingCart.module.scss';
 import OrderSummary from './components/OrderSummary';
 import { Link } from 'react-router-dom';
 import { RootState } from '../../redux/reducers';
-import sslLogo from '../../assets/images/ssl-image.jpg';
+import sslLogo from '/assets/images/ssl-image.jpg';
 
 const ShoppingCart = () => {
 	const cartItems: Array<Product> = useSelector(

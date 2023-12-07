@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { Product } from '../../entities/product';
 import classes from './ShoppingCartButton.module.scss';
 import { Link } from 'react-router-dom';
-import shoppingCartIcon from '../../assets/images/shopping-cart-icon.png';
+import shoppingCartIcon from '/assets/images/shopping-cart-icon.png';
 import { useEffect, useState } from 'react';
 import { RootState } from '../../redux/reducers';
 

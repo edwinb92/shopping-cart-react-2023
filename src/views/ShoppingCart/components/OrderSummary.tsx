@@ -1,7 +1,7 @@
 import { Product } from '../../../entities/product';
 import { useSelector } from 'react-redux';
 import classes from './OrderSummary.module.scss';
-import padLockLocked from '../../../assets/images/padlock-locked.png';
+import padLockLocked from '/assets/images/padlock-locked.png';
 import { RootState } from '../../../redux/reducers';
 
 const OrderSummary = () => {

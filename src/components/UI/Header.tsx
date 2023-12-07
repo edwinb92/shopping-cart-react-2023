@@ -1,5 +1,5 @@
 import classes from './Header.module.scss';
-import logoImage from '../../assets/images/logoRAW.png';
+import logoImage from '/assets/images/logoRAW.png';
 import ShoppingCartButton from '../../components/UI/ShoppingCartButton';
 
 function Header() {
