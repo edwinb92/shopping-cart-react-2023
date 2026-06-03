@@ -1,4 +1,5 @@
 import { Product } from '../../entities/product';
+import { AnyAction } from 'redux';
 
 interface stateType {
 	cartItems: Array<Product>
@@ -12,7 +13,7 @@ const initialState: stateType = {
 	cartItems: [],
 };
 
-const counterReducer = (state = initialState, action: SetCartItemsAction) => {
+const counterReducer = (state = initialState, action: AnyAction) => {
 	switch (action.type) {
 	case 'SET_CARTITEMS':
 		return {
